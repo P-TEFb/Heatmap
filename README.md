@@ -11,7 +11,8 @@ python HEATMAP_CODE.py <PARAMETER FILE>
                  
 Example run: python  HEATMAP_CODE.py PARAMETER.txt                 
 ```
-
+### Parameter description:
+```
 Please provide a PARAMETER.txt file containing the following parameters:
 REGION= bed file containing genomic regions of a given size.
 BEDFILE= bed file containing fragment size information.
@@ -24,3 +25,4 @@ WIDTH= <int>.
 HEIGHT= <int>.
 BLACK= max or an integer or avgx<int>.
 GAMMA= default or a decimal such as 0.5.
+```
