@@ -31,9 +31,10 @@ GAMMA= default or a decimal such as 0.5.
 ## Requirements:
 Python libraries: ``` joblib, statistics, and glob. ```
 
-This program is designed to run on genomic intervals of same size and mapped fragments in bed file format.
+This program is designed to run on genomic intervals of same size and mapped fragments of variable sizes in bed file format.
 
 ### Output:
-A BIGWIG folder is created where bigwig files for each sample can be found. Bigwig files can be loaded onto Integrative Genomics Viewer (IGV) to visualize the number of fragments aligned to any genomic position.
-
-Based on the example run the BIGWIG folder should be under /home/xyz-user/fastq-folder/MAPPED/BIGWIG.
+An OUTPUTDIR is created by the program where heatmap output TIFF image is submitted along with other files such as the following:
+STATISTICS file: showing minimum value pixel,maximum value pixel, average value pixel, and the value at and above which were assigned the darkest pixels in the heatmap. 
+Heatmap matrix file: showing the heatmap table without averaging of rows.
+Heatmap adjusted matrix file: showing the heatmap table after averaging of rows.
