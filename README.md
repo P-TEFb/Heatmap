@@ -45,7 +45,7 @@ This program is designed to run on genomic intervals of same size and mapped fra
 ### Output:
 An OUTPUTDIR is created by the program where heatmap output TIFF image is submitted along with other files such as the following:
 
-STATISTICS file: showing minimum value pixel,maximum value pixel, average value pixel, and the value at and above which were assigned the darkest pixels in the heatmap. 
+STATISTICS file: showing minimum value pixel,maximum value pixel, average value pixel, and the value at and above which the darkest pixels in the heatmap were assigned. 
 
 Heatmap matrix file: showing the heatmap table without averaging of rows.
 
