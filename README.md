@@ -4,7 +4,7 @@ Uses genomic regions of same size in bed file format into greyscale heatmap.
 Author: Mrutyunjaya Parida, David Price Lab, UIOWA
 
 ## Usage:
-Heatmap program runs on Python 2.7+. It is a linux based, multi-thread capable program with a command line interface. It uses parameters in the parameter file provided by the user to build a heatmap. If a PARAMTER.txt file is not provided then the program writes the Parameter description below and exits the run. The program folder contains an installation of bedtools2. Please run HEATMAP_CODE.py from the program folder. The steps used in this program have been published in the following research papers:
+Heatmap program runs on Python 2.7+. It is a linux based, multi-thread capable program with a command line interface. It uses parameters in the parameter file provided by the user to build a heatmap. If a PARAMTER.txt file is not provided then the program writes the Parameter description below and exits the run. The program can be downloaded from https://drive.google.com/file/d/1-MzRNcOEwlLtVBw-4M52QlJx8kyY5gce/view?usp=sharing. The program folder contains an installation of bedtools2. Please run HEATMAP_CODE.py from the program folder. The steps used in this program have been published in the following research papers:
 https://pubmed.ncbi.nlm.nih.gov/30755505/ ,
 and https://pubmed.ncbi.nlm.nih.gov/32597978/.
 
