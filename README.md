@@ -38,7 +38,8 @@ BLACK= max or an integer or avgx<int>.
        A gradient from black to white will be assigned to the values lower than the BLACK value. Users may write max or 30 or avgx2. 
 GAMMA= default or a decimal such as 0.5. This option allows better contrast between black and white in our images.
 FRAGMENTCENTER= yes/no. If yes then fragment centers for each fragment in the mapped deduped bed file will be generated in the BEDFILE file path folder.
-                The extension of the fragment center file will say "-FC.bed" at the end.
+                The extension of the fragment center file will say "-FC.bed" at the end. The output heatmap will contain fragment center data instead 
+                of whole fragments.
 ```
 ## Requirements:
 Python libraries: ``` joblib, statistics, and glob. ```
