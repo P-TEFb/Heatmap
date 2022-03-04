@@ -18,8 +18,9 @@ Example run: python  HEATMAP_CODE.py PARAMETER.txt
 Please provide a PARAMETER.txt file containing the following parameters:
 REGION= bed file containing genomic regions of the same size.
 BEDFILE= bed file containing mapped fragments of variable sizes.
-FRAGMENTSIZE= preferred fragment size selection. Users may write All to use fragments of all sizes. Users may be selective such as 35-60,90-200. 
-              Here, fragments between 35 to 60bp will be used for one heatmap and 90 to 200bp fragments will be used for another heatmap.
+FRAGMENTSIZE= preferred fragment size selection. Users may write All to use fragments of all sizes. Users may be selective such as 35-60,90-200 or 
+              for fragments of single size 35-35. When written like this 35-60,90-200 it means fragments between 35 to 60bp will be used for one 
+              heatmap and 90 to 200bp fragments will be used for another heatmap.
 OUTPUTDIR= HEATMAP_CODE.py will create an output folder mentioned here by the user.
 STRAND= yes/no. If yes then only strand specific data will be used to make this heatmap. 
         Please make sure to use this option the sixth column of the REGION file must have strand information for all genomic regions.
@@ -36,6 +37,8 @@ BLACK= max or an integer or avgx<int>.
        avgx2 or avgx3 value and above such as the average value of the heatmap table times 2 or 3 and values above it. 
        A gradient from black to white will be assigned to the values lower than the BLACK value. Users may write max or 30 or avgx2. 
 GAMMA= default or a decimal such as 0.5. This option allows better contrast between black and white in our images.
+FRAGMENTCENTER= yes/no. If yes then fragment centers for each fragment in the mapped deduped bed file will be generated in the BEDFILE file path folder.
+                The extension of the fragment center file will say "-FC.bed" at the end.
 ```
 ## Requirements:
 Python libraries: ``` joblib, statistics, and glob. ```
@@ -47,6 +50,6 @@ An OUTPUTDIR is created by the program where heatmap output TIFF image is submit
 
 STATISTICS file: showing minimum value pixel,maximum value pixel, average value pixel, and the value at and above which the darkest pixels in the heatmap were assigned. 
 
-Heatmap matrix file: showing the heatmap table without averaging of rows.
+Heatmap matrix file: showing the heatmap table without averaging of rows and in the sorting order specified.
 
 Heatmap adjusted matrix file: showing the heatmap table after averaging of rows that are adjusted for the BLACK value based on user preferences.
